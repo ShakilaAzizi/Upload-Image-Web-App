@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>Upload Image</title>
+  <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1>Upload Image</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <div class="form-container">
+        <label for="image">Choose an image:</label>
+        <input type="file" name="image" id="image" class="file-input" required>
+        <button type="submit" class="submit-btn">Upload</button>
+      </div>
+    </form>
+    
+    <br>
+    <a href="/">Back to Home</a>
+  </div>
+
+</body>
+</html>

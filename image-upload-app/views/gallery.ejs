@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>Gallery</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Image Gallery</h1>
+    <% if (uploads.length > 0) { %>
+      <% uploads.forEach(image => { %>
+        <div>
+          <img src="/uploads/<%= image.filename %>" width="200">
+          <p><%= image.originalname %> — <%= image.date %></p>
+        </div>
+      <% }) %>
+    <% } else { %>
+      <p>No images uploaded yet.</p>
+    <% } %>
+    <br>
+    <a href="/">Back to Home</a>
+  </div>
+ 
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>Home</title>
+  <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1>Uploaded Image</h1>
+    <% if (latest) { %>
+      <img src="/uploads/<%= latest.filename %>" alt="Uploaded Image" width="300">
+      <p><strong>Original Name:</strong> <%= latest.originalname %></p>
+      <p><strong>Uploaded At:</strong> <%= latest.date %></p>
+    <% } else { %>
+      <p>No image uploaded yet.</p>
+    <% } %>
+    <br>
+    <a href="/upload">Upload New Image</a> |
+    <a href="/gallery">View Gallery</a>
+  </div>
+ 
+</body>
+</html>
