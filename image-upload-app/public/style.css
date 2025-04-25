@@ -42,7 +42,7 @@ body {
     text-align: center;
   }
   
-  /* Style the label */
+  
   label {
     font-size: 18px;
     color: #555;
@@ -50,7 +50,7 @@ body {
     display: block;
   }
   
-  /* Style the file input */
+
   .file-input {
     width: 100%;
     padding: 10px;
@@ -62,7 +62,7 @@ body {
     color: #333;
   }
   
-  /* Style the upload button */
+ 
   .submit-btn {
     background-color: #6a5acd; /* Purple background */
     color: #fff;
@@ -78,7 +78,7 @@ body {
     background-color: #8a2be2; /* Lighter purple when hovered */
   }
   
-  /* Hover effect for file input */
+  
   .file-input:hover {
     border-color: #6a5acd;
   }
